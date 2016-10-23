@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Engine";
+}
+
+<div class="PageTitle">
+    <h2>Game Engine</h2>
+</div>
+<div class="PageContent">
+    <div class="ProjectSection">
+        <div class="ProjectTitle">
+            <h4>C++ | OpenGL | GLM | Qt</h4>
+        </div>
+        <p>Over the last two years I've been creating a game engine. Having started with my own math library, which has since been replaced with GLM (a third party library). 
+            Moving into a 3D rendering system using OpenGL, and custom GLSL shaders (lighting, HUD, materials and debug options). 
+            Debug tools such as assert logging, profiling, and memory leak checking. Recently, a physics system including springs, torque, angular velocity, and collision. 
+            Also, a front end UI built with Qt, provides a front facing use for the non-coder. <br /><br />As with all great tools the work never ends, with each new addition to the backend engine code, the UI has to adapt. 
+            Most recently, a change to my texture system resulted in a complete overhaul of handling materials, both in the UI and connected engine code. 
+            A huge addition in the works is adding scripting languages, Pythan and Lua, to give options for gameplay creation and end use of creating full featured games. 
+            <br />The following pictures provide insight to a few other features of the engine. 
+        </p>
+        <div class="ProjectIcon">
+            <img src="~/Content/Projects/Engine/BinaryFile.png" />
+            <p>As with all programs, saving and loading projects is a must. I created my own file type, containing my header information, geometries, lights, shaders, and transform information.
+                When loading assets from the file, if data needs to be persistent through a program its put into memory once, from the read, then maintained for the life of the data.
+                if data is temporary and can be deleted, its cleanup after use. 
+            </p>
+        </div>
+        <div class="ProjectIcon">
+            <img src="~/Content/Projects/Engine/Engine_FilePreview.png" />
+            <p>A preview window for loading FBX files, and another binary type, which loads geometry quickly. The binary file stores data contiguously; 
+                allowing for one read of the file, with no parsing. Simple reinterpret casts of pointers converts the binary back into useable geometry information.
+            </p>
+        </div>
+        <div class="ProjectIcon">
+            <img src="~/Content/Projects/Engine/Engine_LoadedLevel_small.png" />
+            <p>Loading of a custom scene files. Notice in the following picture how object names are retained. 
+            </p>
+        </div>
+        <div class="ProjectIcon">
+            <img src="~/Content/Projects/Engine/Engine_ModelTransform_small.png" />
+            <p>Having shapes in the worlds cool, but moving them throughout the world is a must. Having created a transformation
+                box gives more options for how geometry is transformed into world space.
+            </p>
+        </div>
+        <div class="ProjectDescription">
+            <p>@ViewBag.ProjectDescription</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "EscherPlex";
+}
+<div class="PageTitle">
+    <h2>Escher Plex</h2>
+</div>
+<div class="PageContent">
+    <div class="ProjectSection">
+        <div class="ProjectTitle">
+            <h4>Unreal Engine 3 | UnrealScript | Kismet</h4>
+        </div>
+        <div class="ProjectDescription">
+            <p>
+                Escher Plex is an Unreal 3 game in which a player is able to traverse any surface. 
+                I created this mechanic with the hopes to create something unique during my Capstone project (10 weeks). 
+                Having successfully built the logic into my character I moved to making an endless staircase, 
+                using Matinee and Kismet. Kismet proved to be a great tool built into Unreal, adding functionally for level 
+                streaming and quick logic checks. 
+                <br /><br />
+                My biggest challenge was learning Unreal Script (Unreal’s wrapper language for C++) to control the 
+                characters movements based on collision with the world. While the vector math would have been a simple 
+                dot and cross against the normal, interpreting what Unreal Script gave me access to lead me down some 
+                dark paths. Finally figuring how rotators and transformations could be used in conjunction I landed 
+                at a solution. 
+                </p>
+            <iframe width="640" height="360" src="//www.youtube.com/embed/xwFBAT2WFXg?rel=0" frameborder="0" allowfullscreen></iframe>      
+            <p>
+                A large section of Kismet nodes creating the level streaming and door logic throughout the game. 
+                Having reviewed my code and a deeper understanding of 
+                Kismet I realized most of this functionality could have been broken into sequences and reused.
+            </p>
+            <img src="~/Content/Projects/EscherPlex/EscherPlexKismet.png" />
+            <p>
+                While wall walking is enabled the character is placed into a first person view. 
+                Placing doors and stairs at different angles and surfaces really gives the player a feeling for 
+                M.C. Escher’s Relativity. 
+            </p>
+            <img src="~/Content/Projects/EscherPlex/EscherPlexStairs.png" />
+        </div>
+        </div>
+</div>

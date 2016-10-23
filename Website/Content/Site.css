@@ -1,0 +1,192 @@
+﻿
+.PageContent {
+    padding: 15%;
+}
+
+/**
+
+body {
+    font-size: 1.5em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #DCD1BA;
+    padding: 0%;
+    margin: 0 auto;
+}
+
+#MainHeader {
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    background-color: #000000;
+    color: #FFF;
+    top: 0px;
+    left:0px;
+    padding: 5px;
+    margin: 0 auto;
+    min-width:640px;
+}
+
+#Header {
+    font-size: 1.20em;
+    color: #FFF;
+}
+
+#HeaderImage {
+    float:right;
+    padding:0px;
+    margin:0;
+}
+#HeaderName {
+    font-style:italic;
+    font-size:1.40em;
+}
+#Technologies {
+    margin: 1%;
+    color: #e6e674;
+}
+#NavBar {
+    background-color: #1A1A1A;
+    margin-top: 20px;
+    padding: 0px;
+    height: 100px;
+    text-align: center;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+#NavBar li {
+    float:left;
+    padding: 15px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+#ContactBar li {
+    float:Right;
+    padding: 10px;
+    margin: 0px;
+    list-style-type: none;
+}
+/** LINKS ** /
+#NavBar a:link {
+    color: #DCD1BA;
+}
+#NavBar a:visited {
+    color: #FFF;
+}
+
+/*End_LINKS*/
+
+/* Project pages * /
+
+.PageTitle {
+    font-size: 2.0em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    text-align:center;
+}
+
+a:visited{
+    color: #DCD1BA;
+}
+a:link {
+    color:#fff;
+}
+
+.PageContent {
+    float:none;
+    border: 2px solid black;
+    color: #fff;
+    background-color: #232323;
+    padding: 1%;
+    margin: 1%;
+    min-width:40%;
+}
+
+.ProjectSection {
+    float:none;
+    background-color: #808080;
+    padding: 1%;
+    margin-top: 1.2%;
+    margin-bottom: 2%;
+    border: 0.2em solid white;
+}
+
+.ProjectDescription {
+    float:none;
+    padding: 2%;
+    margin: 2%;
+}
+
+.ProjectIcon {
+    padding: 2%;
+    margin: 1%;
+}
+
+.ProjectVideo {
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+/*Main Page Layout * /
+#MainAboutMe {
+    margin: 15px;
+}
+#MainProjects {
+    padding: 15px;
+    margin: 10px;
+    overflow:hidden;
+}
+#MainProjects li {
+    margin:10px;
+    float:left;
+    list-style-type:none;
+}
+#MainProjects ul {
+    list-style-type:none;
+}
+
+#MainProjects h1 {
+    text-align:center;
+}
+
+#MainProjectSection {
+    padding: 10px;
+    margin: 15px;
+    float:none;
+    overflow:hidden;
+}
+
+#DemoReel {
+    margin-left: 25%;
+}
+
+/*Spacific Page* /
+
+.FlashPlayer {
+}
+
+.ProjectIcon img {
+    float:none;
+    width: 400px;
+    height: 250px;
+}
+
+/* FOOTER * /
+
+#ContactInfo {
+    background-color: #808080;
+    float:left;
+    width: 100%;
+    min-width:640px;
+}
+
+#ContactInfo li {
+    float:left;
+    padding:20px;
+    list-style-type: none;
+}
+/**/

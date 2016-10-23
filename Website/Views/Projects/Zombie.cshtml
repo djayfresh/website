@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Zombie";
+}
+<header>
+    <script type="text/javascript" src="../Content/Projects/Zombie/swfobject.js"></script>
+        <script type="text/javascript">
+            // For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. 
+            var swfVersionStr = "11.0.0";
+            // To use express install, set to playerProductInstall.swf, otherwise the empty string. 
+            var xiSwfUrlStr = "playerProductInstall.swf";
+            var flashvars = {};
+            var params = {};
+            params.quality = "high";
+            params.bgcolor = "#333333";
+            params.allowscriptaccess = "sameDomain";
+            params.allowfullscreen = "true";
+            params.wmode = "direct";
+            var attributes = {};
+            attributes.id = "TowerOffense";
+            attributes.name = "TowerOffense";
+            attributes.align = "middle";
+            swfobject.embedSWF(
+                "../Content/Projects/Zombie/TowerOffense.swf", "flashContent",
+                "800", "600",
+                swfVersionStr, xiSwfUrlStr,
+                flashvars, params, attributes);
+            // JavaScript enabled so display the flashContent div in case it is not replaced with a swf object.
+            swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+        </script>
+
+
+</header>
+
+<div class="PageTitle">
+    <h2>Zombie Apocalypse</h2>
+</div>
+<div class="PageContent">
+    <div class="ProjectSection">
+        <div class="ProjectTitle">
+            <h4>ActionScript 3</h4>
+        </div>
+            <div id="flashContent">
+            <p>
+                To view this page ensure that Adobe Flash Player version 
+                11.0.0 or greater is installed. 
+            </p>
+            <script type="text/javascript">
+                var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://");
+                document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='"
+                                + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>");
+            </script> 
+        </div>
+        <div class="FlashPlayer">
+            <noscript>
+                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="800" height="600" id="TowerOffense">
+                    <param name="movie" value="../Content/Projects/Zombie/TowerOffense.swf" />
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#333333" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <param name="allowFullScreen" value="true" />
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="../Content/Projects/Zombie/TowerOffense.swf" width="800" height="600">
+                        <param name="quality" value="high" />
+                        <param name="bgcolor" value="#333333" />
+                        <param name="allowScriptAccess" value="sameDomain" />
+                        <param name="allowFullScreen" value="true" />
+                    <!--<![endif]-->
+                    <!--[if gte IE 6]>-->
+                        <p> 
+                            Either scripts and active content are not permitted to run or Adobe Flash Player version
+                            11.0.0 or greater is not installed.
+                        </p>
+                    <!--<![endif]-->
+                        <a href="http://www.adobe.com/go/getflashplayer">
+                            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                        </a>
+                    <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                </object>
+            </noscript> 
+        </div>
+        <div class="ProjectDescription">
+            <p>You are a survivor during a zombie apocalypse. You have heard of a safe zone but there are many zombies between it and your camp. You decide to fight your way to the new zone because you are low on supplies. To get there you will need to build your way along a winding path by day and battle zombies by night. You can scavenge some supplies from dead zombies to sustain your efforts. If your original camp is lost, you will be unable to respawn. You must reach the new safe zone before you run out of supplies and become zombie grub.</p>
+        </div>
+    </div>
+</div>
