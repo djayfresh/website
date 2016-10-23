@@ -2,6 +2,6 @@
 
 @Component({
     selector: 'my-app',
-    template: '<h1>This site is currently under construction</h1>'
+    templateUrl: 'app/app.component.html'
 })
 export class AppComponent { }

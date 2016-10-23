@@ -168,6 +168,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.component.html" />
     <Content Include="Content\styles.css" />
     <Content Include="Views\Home\Index.cshtml" />
     <TypeScriptCompile Include="app\app.module.ts" />
@@ -3486,6 +3487,8 @@
     <Content Include="node_modules\zone.js\package.json" />
     <Content Include="node_modules\zone.js\README.md" />
     <Content Include="package.json" />
+    <Content Include="app\app.component.less" />
+    <Content Include="Content\themes\colors.less" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="node_modules\%40angular\common\bundles\common-testing.umd.js" />
     <Content Include="node_modules\%40angular\common\bundles\common.umd.js" />
