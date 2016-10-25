@@ -3,7 +3,7 @@
 }
 
 output: {
-        filename: 'dist/app.js';
+        filename: './dist/app.js';
 }
 module: {
         loaders: [

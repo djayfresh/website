@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "A webpack starter for Angular",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080",
-    "test": "karma start",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "typings install"
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
   "licenses": [
     {
