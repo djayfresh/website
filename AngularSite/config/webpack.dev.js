@@ -3,21 +3,25 @@
 }
 
 output: {
-        filename: 'app.js';
+        filename: 'dist/app.js';
 }
-
-loaders: [
-    {
-        test: /\.ts$/,
-        loaders: 'ts'
-    },
-    {
-        test: /\.css$/,
-        loaders: 'style!css'
-    },
-    {
-        test: /\.less$/,
-        exclude: /node_modules/,
-        loader: 'raw-loader!less-loader'
-    }
-]
+module: {
+        loaders: [
+            {
+                test: /\.ts$/,
+                loaders: 'ts'
+            },
+            {
+                test: /\.css$/,
+                loaders: 'style!css'
+            },
+            {
+                test: /\.less$/,
+                exclude: /node_modules/,
+                loader: 'raw-loader!less-loader'
+            }
+        ]
+}
+resolve: {
+        extensions: ['', '.js', '.ts', '.less']
+}

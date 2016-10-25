@@ -169,8 +169,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
+    <Content Include="config\webpack.dev.js" />
     <Content Include="Content\styles.css" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="webpack.config.js" />
     <TypeScriptCompile Include="app\app.module.ts" />
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\main.ts" />
