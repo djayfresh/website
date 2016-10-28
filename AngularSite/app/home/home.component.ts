@@ -7,7 +7,8 @@ import { BaseComponent } from '../shared/base.component';
     templateUrl: './app/home/home.component.html',
     styleUrls:  ['./app/home/home.component.less']
 })
-export class HomeComponent { 
-    constructor(){
+export class HomeComponent extends BaseComponent { 
+    constructor() {
+        super();
     }
 }
