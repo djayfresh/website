@@ -1,12 +1,13 @@
 ﻿import { Component } from '@angular/core';
 
 @Component({
+    template: '',
 })
 export class BaseComponent { 
     static nextComponentId: number = 0;
-    id: number;
+    componentId: number;
 
     constructor(){
-        this.id = nextComponentId++;
+        this.componentId = BaseComponent.nextComponentId++;
     }
 }

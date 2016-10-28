@@ -174,9 +174,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.component.html" />
-    <TypeScriptCompile Include="app\shared\base-component.component.ts" />
+    <TypeScriptCompile Include="app\shared\base.component.ts" />
     <TypeScriptCompile Include="app\app.routing.ts" />
     <TypeScriptCompile Include="app\shared\shared.module.ts" />
+    <Content Include="app\home\home.component.html" />
+    <TypeScriptCompile Include="app\home\home.component.ts" />
     <Content Include="config\webpack.dev.js" />
     <Content Include="Content\styles.css" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -255,6 +257,7 @@
     <Content Include="package.json" />
     <Content Include="app\app.component.less" />
     <Content Include="Content\themes\colors.less" />
+    <Content Include="app\home\home.component.less" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
