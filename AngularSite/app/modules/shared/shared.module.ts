@@ -1,6 +1,6 @@
 ﻿import { NgModule } from '@angular/core';
 
-import { BaseComponent } from './base.component';
+import { BaseComponent } from 'djayfresh/component/shared';
 
 @NgModule({
     imports: [],

@@ -173,19 +173,31 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.component.html" />
-    <TypeScriptCompile Include="app\shared\base.component.ts" />
-    <TypeScriptCompile Include="app\app.routing.ts" />
-    <TypeScriptCompile Include="app\shared\shared.module.ts" />
-    <Content Include="app\home\home.component.html" />
-    <TypeScriptCompile Include="app\home\home.component.ts" />
+    <Content Include="app\components\app.component.html" />
+    <TypeScriptCompile Include="app\components\shared\base.component.ts" />
+    <TypeScriptCompile Include="app\routing\app.routing.ts" />
+    <TypeScriptCompile Include="app\modules\shared\shared.module.ts" />
+    <Content Include="app\components\home\home.component.html" />
+    <TypeScriptCompile Include="app\components\home\home.component.ts" />
+    <TypeScriptCompile Include="app\utility\path\path.utility.ts" />
+    <TypeScriptCompile Include="app\utility\utility.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\utility.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\base.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\utility.d.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\component\shared.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\modules.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\modules\shared.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\component\home.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\routes.d.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\routes\app.ts" />
+    <TypeScriptCompile Include="app\node_modules\djayfresh\routes.ts" />
     <Content Include="config\webpack.dev.js" />
     <Content Include="Content\styles.css" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="webpack.config.js" />
-    <TypeScriptCompile Include="app\app.module.ts" />
-    <TypeScriptCompile Include="app\app.component.ts" />
-    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\modules\app.module.ts" />
+    <TypeScriptCompile Include="app\components\app.component.ts" />
+    <TypeScriptCompile Include="app\build\main.ts" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -255,9 +267,9 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="package.json" />
-    <Content Include="app\app.component.less" />
+    <Content Include="app\components\app.component.less" />
     <Content Include="Content\themes\colors.less" />
-    <Content Include="app\home\home.component.less" />
+    <Content Include="app\components\home\home.component.less" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -313,6 +325,8 @@
     <Content Include="typings\globals\node\typings.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\config\" />
+    <Folder Include="app\dependencies\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

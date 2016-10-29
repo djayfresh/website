@@ -1,6 +1,6 @@
 ﻿import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from 'djayfresh/component/home';
 
 const routes: Routes = [
     {

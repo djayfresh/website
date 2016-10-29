@@ -4,11 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { RouterModule }    from '@angular/router';
 
-import { SharedModule } from './shared/shared.module';
-import { AppRouting } from './app.routing';
+import { SharedModule } from 'djayfresh/modules/shared';
+import { AppRouting } from 'djayfresh/routes';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent, HomeComponent } from 'djayfresh/component/home';
 
 var baseProvider = {provide: APP_BASE_HREF, useValue: ''};
 
