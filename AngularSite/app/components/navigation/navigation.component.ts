@@ -8,7 +8,7 @@ import { BaseComponent } from 'djayfresh/component/shared';
     templateUrl: PathUtility.componentTemplateURI('navigation'),
     styleUrls:  [PathUtility.componentStyleURI('navigation')]
 })
-export class HomeComponent extends BaseComponent { 
+export class NavigationComponent extends BaseComponent { 
     constructor() {
         super();
     }
