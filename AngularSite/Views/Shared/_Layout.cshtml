@@ -5,16 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @Styles.Render("~/Content/css")
-    <link rel="stylesheet" href="Content/styles.css">
     @Scripts.Render("~/bundles/modernizr")
     <!-- 1. Load libraries -->
      <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <!-- 2. Configure SystemJS -->
-    <script src="systemjs.config.js"></script>
+    @Scripts.Render("~/bundles/node")
+    @Scripts.Render("~/bundles/systemjs")
     <script>
         System.import('app/config/main').catch(function (err) { console.error(err); });
     </script>
@@ -23,6 +18,8 @@
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/analytics")
     @RenderSection("scripts", required: false)
 </body>
 </html>

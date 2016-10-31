@@ -191,7 +191,28 @@
     <TypeScriptCompile Include="app\node_modules\djayfresh\routes.d.ts" />
     <TypeScriptCompile Include="app\node_modules\djayfresh\routes\app.ts" />
     <TypeScriptCompile Include="app\node_modules\djayfresh\routes.ts" />
+    <Content Include="app\components\navigation\navigation.component.html" />
+    <Content Include="app\components\navigation\navigation.component.ts" />
+    <Content Include="app\config\main.ts" />
     <Content Include="config\webpack.dev.js" />
+    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\dropdowns-enhancement.css" />
+    <Content Include="Content\css\dropdowns-enhancement.min.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Content\img\Facebook_logo.png" />
+    <Content Include="Content\img\GitHub.png" />
+    <Content Include="Content\img\GitHub_Light.png" />
+    <Content Include="Content\img\linkedin.png" />
+    <Content Include="Content\img\mail.png" />
+    <Content Include="Content\js\analytics.js" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\dropdowns-enhancement.js" />
+    <Content Include="Content\js\jquery-2.1.4.min.js" />
+    <Content Include="Content\js\npm.js" />
     <Content Include="Content\styles.css" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="webpack.config.js" />
@@ -269,6 +290,9 @@
     <Content Include="app\components\app.component.less" />
     <Content Include="Content\themes\colors.less" />
     <Content Include="app\components\home\home.component.less" />
+    <Content Include="app\components\navigation\navigation.component.less" />
+    <Content Include="Content\css\bootstrap-theme.css.map" />
+    <Content Include="Content\css\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -324,7 +348,6 @@
     <Content Include="typings\globals\node\typings.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\config\" />
     <Folder Include="app\dependencies\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />

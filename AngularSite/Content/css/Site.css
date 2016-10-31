@@ -1,0 +1,116 @@
+﻿body {
+    font-size: 1.5em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #DCD1BA;
+    margin: 0 auto;
+}
+.navbar-brand {
+    font-size: 2.2em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    background-color: #000000;
+    color: #FFF;
+}
+
+.navbar {
+    font-size: 1.25em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    background-color: #000000;
+    color: #FFF;
+    padding-top: 1%;
+}
+
+.PageContent
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    background-color: #232323;
+    color: #fff;
+    border: 0.75em solid black;
+    text-align: center;
+}
+
+.PageTitle h2{
+    font-size: 4.0em;
+    text-align:center;
+    padding-bottom: 2%;
+}
+
+.ProjectIcon {
+    margin: 2%;
+}
+
+.ProjectIcon img {
+    width: 100%;
+    max-width: 50em;
+    margin: 2%;
+}
+.ProjectIcon iframe {
+    width: 100%;
+    max-width: 50em;
+    height: 35em;
+    margin: 2%;
+}
+
+.ProjectIconDescription {
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.ProjectVideo iframe {
+    width: 100%;
+    max-width: 50em;
+    margin: 2%;
+}
+
+.ProjectTitle {
+    font-size: 3.0em;
+    text-align:center;
+    padding-bottom: 2%;
+}
+
+.ProjectSection {
+    background-color: #808080;
+    padding: 1%;
+    margin-top: 1.2%;
+    margin-bottom: 2%;
+    border: 0.2em solid white;
+    text-align: center;
+}
+
+.ProjectDescription {
+    font-size: 1.5em;
+}
+
+#DemoReel iframe {
+    width: 100%;
+    max-width: 50em;
+}
+
+#LinksMenu_Header li {
+    padding-right: 0.2%;
+    padding-left: 0.2%;
+}
+
+#LinksMenu_Footer li {
+    padding-right: 0.2%;
+    padding-left: 0.2%;
+}
+
+a.nostyle {
+    text-decoration: none;
+    color: inherit;
+    cursor:pointer;
+}
+
+a:visited{
+    color: #DCD1BA;
+}
+a:link {
+    color:#fff;
+}
+
+#Technologies {
+    margin: 1%;
+}
