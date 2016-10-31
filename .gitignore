@@ -23,7 +23,7 @@ bld/
 [Oo]bj/
 
 # Angular
-**/node_modules/
+AngularSite/node_modules/
 **/typings/
 
 # Visual Studo 2015 cache/options directory
