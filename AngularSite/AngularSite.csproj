@@ -194,6 +194,7 @@
     <Content Include="app\components\navigation\navigation.component.html" />
     <Content Include="app\components\navigation\navigation.component.ts" />
     <Content Include="app\config\main.ts" />
+    <TypeScriptCompile Include="app\services\router.service.ts" />
     <Content Include="config\webpack.dev.js" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
