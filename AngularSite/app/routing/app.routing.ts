@@ -2,9 +2,11 @@
 
 import { HomeComponent } from 'djayfresh/component/home';
 
+import { AppRoutingPath } from './app.path';
+
 const routes: Routes = [
     {
-        path: '',
+        path: AppRoutingPath.Home,
         component: HomeComponent
     }
 ];
