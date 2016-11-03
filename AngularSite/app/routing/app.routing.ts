@@ -9,13 +9,12 @@ const routes: Routes = [
     {
         path: AppRoutingPath.Home,
         component: HomeComponent,
+    },{
+        path: AppRoutingPath.Projects,
+        component: ProjectsComponent,
         children: [{
-            path: AppRoutingPath.Projects,
-            component: ProjectsComponent,
-            children: [{
-                path: AppRoutingPath.Project,
-                component: ProjectComponent
-            }]
+            path: AppRoutingPath.Project,
+            component: ProjectComponent
         }]
     }
 ];

@@ -6,17 +6,19 @@ import { RouterModule }    from '@angular/router';
 
 import { SharedModule } from 'djayfresh/modules/shared';
 import { AppRouting } from 'djayfresh/routes';
+import { AppService, RouterService } from 'djayfresh/services';
 
 import { AppComponent, HomeComponent, NavigationComponent } from 'djayfresh/component/home';
 import { ProjectsComponent, ProjectComponent } from 'djayfresh/component/home';
 
 var baseProvider = {provide: APP_BASE_HREF, useValue: ''};
+var serviceProviders = [AppService, RouterService];
 
 @NgModule({
     imports: [BrowserModule, RouterModule, SharedModule, AppRouting, FormsModule],
     declarations: [AppComponent, HomeComponent, NavigationComponent,
         ProjectsComponent, ProjectComponent],
-    providers: [baseProvider],
+    providers: [baseProvider, ...serviceProviders],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
