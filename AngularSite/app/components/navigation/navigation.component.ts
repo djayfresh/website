@@ -2,6 +2,7 @@
 import { PathUtility } from 'djayfresh/utility';
 
 import { BaseComponent } from 'djayfresh/component/shared';
+import { AppService } from 'djayfresh/services';
 
 @Component({
     selector: 'navigation',
@@ -9,7 +10,7 @@ import { BaseComponent } from 'djayfresh/component/shared';
     styleUrls:  [PathUtility.componentStyleURI('navigation')]
 })
 export class NavigationComponent extends BaseComponent { 
-    constructor() {
-        super();
+    constructor(appService: AppService){
+        super(appService);
     }
 }

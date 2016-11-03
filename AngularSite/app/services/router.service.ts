@@ -20,9 +20,24 @@ export class RouterService {
                     }
                 });
             }
-        
         });
+    }
 
+    subsribeToParams(componentId: number, callback: Function){
+        this.subscribersToParams.push({id: componentId, callback: callback});
+    }
+
+    unsubsribeToParams(componentId: number){
+        var index = -1;
+        for(var listIndex = 0; listIndex < this.subscribersToParams.length; listIndex++){
+            if(this.subscribersToParams[listIndex].id === componentId){
+                index = listIndex;
+                break;
+            }
+        }
+        if(index >= 0){
+            this.subscribersToParams = this.subscribersToParams.splice(index, 1);
+        }
     }
 }
 

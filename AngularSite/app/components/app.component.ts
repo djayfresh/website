@@ -2,6 +2,7 @@
 
 import { BaseComponent } from 'djayfresh/component/shared';
 import { PathUtility } from 'djayfresh/utility';
+import { AppService } from 'djayfresh/services';
 
 @Component({
     selector: 'my-app',
@@ -9,7 +10,7 @@ import { PathUtility } from 'djayfresh/utility';
     styleUrls: [PathUtility.componentURI('app.component.less')]
 })
 export class AppComponent extends BaseComponent { 
-    constructor(){
-        super();
+    constructor(appService: AppService){
+        super(appService);
     }
 }
