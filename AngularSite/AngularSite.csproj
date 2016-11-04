@@ -361,7 +361,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\dependencies\" />
-    <Folder Include="app\node_modules\services\" />
+    <Folder Include="app\node_modules\djayfresh\services\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

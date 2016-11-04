@@ -40,7 +40,7 @@ namespace AngularSite
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                        "~/Content/css/bootstrap.min.css",
+                        "~/Content/css/bootstrap.css",
                         "~/Content/css/dropdowns-enhancement.min.css",
                         "~/Content/styles.css"));
 

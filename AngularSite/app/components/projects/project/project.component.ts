@@ -4,13 +4,17 @@ import { BaseComponent } from 'djayfresh/component/shared';
 import { PathUtility } from 'djayfresh/utility';
 import { AppService } from 'djayfresh/services';
 
+import { Project } from 'djayfresh/models';
+
 @Component({
     selector: 'project',
     templateUrl: PathUtility.componentTemplateURI('projects/project'),
     styleUrls: [PathUtility.componentStyleURI('projects/project')]
 })
 export class ProjectComponent extends BaseComponent {
-    @Input() id: number;
+    @Input() id: string;
+
+    project: Project;
 
     constructor(appService: AppService){
         super(appService);
