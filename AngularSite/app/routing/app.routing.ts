@@ -7,15 +7,21 @@ import { AppRoutingPath } from './app.path';
 
 const routes: Routes = [
     {
+        path: AppRoutingPath.Base,
+        redirectTo: AppRoutingPath.Home,
+        pathMatch: 'full',
+    }, 
+    {
         path: AppRoutingPath.Home,
         component: HomeComponent,
-    },{
+    },
+    {
         path: AppRoutingPath.Projects,
         component: ProjectsComponent,
-        children: [{
-            path: AppRoutingPath.Project,
-            component: ProjectComponent
-        }]
+    },
+    {
+        path: AppRoutingPath.Project,
+        component: ProjectComponent
     }
 ];
 

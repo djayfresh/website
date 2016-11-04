@@ -1,6 +1,8 @@
 ﻿import { Injectable } from '@angular/core';
 import { Router as AngularRouter, ActivatedRoute, RouterState } from '@angular/router';
 
+import { NavigationStart } from '@angular/router';
+
 @Injectable()
 export class RouterService {
     
@@ -11,15 +13,24 @@ export class RouterService {
     }
 
     private init() {
-        this.router.routerState.root.params.subscribe((params) => {
-            console.log("Params", params);
-            if(this.subscribersToParams) {
-                this.subscribersToParams.forEach((subsriber) => {
-                    if(subsriber && subsriber.callback){
-                        subsriber.callback(params);
-                    }
-                });
+        this.router.events.subscribe((e) => {
+            console.log("event", e);
+            if(e instanceof NavigationStart) {
+                //this.router.getTree();
             }
+
+            console.log("State", this.router.routerState);
+            
+            this.router.routerState.root.params.subscribe((params) => {
+                console.log("Params", params);
+                if(this.subscribersToParams) {
+                    this.subscribersToParams.forEach((subsriber) => {
+                        if(subsriber && subsriber.callback){
+                            subsriber.callback(params);
+                        }
+                    });
+                }
+            });
         });
     }
 

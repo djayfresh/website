@@ -1,5 +1,6 @@
 ﻿export class AppRoutingPath {
-    static Home: string = '';
+    static Base: string = '';
+    static Home: string = 'home';
     static Projects: string = 'projects';
     static Project: string = 'project/:id';
     static Resume: string = 'resume';

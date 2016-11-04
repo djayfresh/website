@@ -15,16 +15,17 @@ export class PathUtility {
     }
 
     static componentStyleURI(resourceLocationURI: string, isLess = true): string{
-        var css = PathUtility.pathURI(resourceLocationURI) + '.component.' + (isLess? 'le' : 'c') + 'ss';
+        var css = PathUtility.pathURI(resourceLocationURI) + '.component.' + (isLess? 'less' : 'css');
         return css;
     }
 
     private static pathURI(location: string) {
         var locationBase = PathUtility.lastPath(location);
-        location = location == 'app'? null : location;
-        var path = location? (location + '/') : '';
-        var result = PathUtility.buildPath + path + locationBase;
-        return result;
+        //location = location == 'app'? null : location;
+        //var path = location? (location + '/') : '';
+        //var result = PathUtility.buildPath + path + locationBase;
+        //return result;
+        return PathUtility.buildPath + location + "/" + locationBase;
     }
     
     static lastPath(path: string) {
