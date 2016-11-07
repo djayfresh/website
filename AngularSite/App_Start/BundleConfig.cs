@@ -41,7 +41,7 @@ namespace AngularSite
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                         "~/Content/css/bootstrap.css",
-                        "~/Content/css/dropdowns-enhancement.min.css",
+                        "~/Content/css/dropdowns-enhancement.css",
                         "~/Content/styles.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(

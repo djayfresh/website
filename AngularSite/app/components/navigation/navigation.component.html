@@ -7,12 +7,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a id="menu_nav_toplink" class="navbar-brand" [href]="javascript.void(0)">Douglas Fresh</a> <!-- Home -->
+            <a id="menu_nav_toplink" class="navbar-brand" href="/">Douglas Fresh</a> <!-- Home -->
 
         </div>
         <div class="collapse navbar-collapse" id="bs-nav-collapse">
             <ul class="nav navbar-nav" id="LinksPages_Header">
-                <li><a [href]="javascript.void(0)">Home</a></li> <!-- Home -->
+                <li><a href="/">Home</a></li> <!-- Home -->
                 <li class="dropdown"><a id="menu_dropdown_projects" href="#" data-toggle="dropdown">Projects <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a id="menu_projects_all" href="/projects">All Projects</a></li>
@@ -36,17 +36,17 @@
                 </li>
                 <li role="separator" class="divider navbar-right"></li>
                 <li class="navbar-right">
-                    <h2><a target="_blank" href="https://www.facebook.com/DougJayFresh">
+                    <h2><a target="_blank" [href]="'https://' + Links.Facebook">
                         <img id="menu_facebook" src="./Content/img/Facebook_Logo.png" /></a></h2>
                 </li>
                 <li role="separator" class="divider navbar-right"></li>
                 <li class="navbar-right">
-                    <h2><a target="_blank" href="https://github.com/djayfresh">
+                    <h2><a target="_blank" [href]="'https://' + Links.GitHub">
                         <img id="menu_github" src="./Content/img/GitHub_Light.png" /></a></h2>
                 </li>
                 <li role="separator" class="divider navbar-right"></li>
                 <li class="navbar-right">
-                    <h2><a target="_blank" href="https://www.linkedin.com/pub/douglas-fresh/43/305/87b">
+                    <h2><a target="_blank" [href]="'https://' + Links.LinkedIn">
                         <img id="menu_linkedin" src="./Content/img/LinkedIn.png" /></a></h2>
                 </li>
             </ul>
