@@ -51,14 +51,14 @@ export class RouterService {
         }
     }
 
-    navigate(url: string, params: {[key: string]: string}[] = null) {
+    navigate(url: string, params: {[key: string]: string} = null) {
         console.log("Start nav", url, params);
         if(params) {
             for(var paramKey in params) {
-                var paramId = ':' + paramKey;
+                var paramId = `:${paramKey}`;
                 var urlParamIndex = url.indexOf(paramId);
                 if(urlParamIndex >= 0){
-                    url = url.replace(paramId, params[paramKey]);
+                    url = url.replace(new RegExp(paramId, 'g'), params[paramKey]);
                 }
             };
         }
