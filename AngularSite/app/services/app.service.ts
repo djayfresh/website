@@ -16,4 +16,8 @@ export class AppService {
     unsubsribeToParams(componentId: number){
         this.routerService.unsubsribeToParams(componentId);
     }
+
+    navigate(url: string, params: {[key: string]: string}[] = null) {
+        this.routerService.navigate(url, params);
+    }
 } 

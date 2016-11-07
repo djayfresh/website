@@ -17,4 +17,8 @@ export class NavigationComponent extends BaseComponent {
     constructor(appService: AppService){
         super(appService);
     }
+
+    linkClick(url) {
+        this.appService.navigate(url);
+    }
 }
