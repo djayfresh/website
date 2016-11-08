@@ -19,20 +19,19 @@ export class NavigationDirective implements AfterViewInit {
     }
 
     ngAfterViewInit() {
-        console.log("Set href");
         this.el.nativeElement.href = 'javascript:void(0)';
         //Utility.buildUrl(this.url, this.params);
     }
 
     @HostListener('click', ['$event.target']) onMouseClick(target) {
-        var url = '';
-        console.log("Mouse Click", this.link, this.params);
-
-        if(this.link instanceof RouteLink){
-            this.params = this.link.params;
-            url = Utility.buildUrl(this.link.url, this.params);
-        }else {
+        var url = '';        
+        if(Utility.isString(this.link)){
             url = <string>this.link
+        }
+        else {
+            var routeLink = <RouteLink>this.link;
+            this.params = routeLink.params;
+            url = Utility.buildUrl(routeLink.url, this.params);
         }
 
         this.appService.navigate(url, this.params);

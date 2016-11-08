@@ -2,7 +2,7 @@
 
 
 export class PathUtility {
-    static buildPath = './app/components/';
+    static buildPath = 'app/components/';
     
     static componentURI(resourceLocationURI: string): string{
         var html = PathUtility.buildPath + resourceLocationURI;

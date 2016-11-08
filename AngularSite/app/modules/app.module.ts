@@ -11,7 +11,7 @@ import { AppService, RouterService, ProjectService } from 'djayfresh/services';
 import { AppComponent, HomeComponent, NavigationComponent } from 'djayfresh/component/home';
 import { ProjectsComponent, ProjectComponent } from 'djayfresh/component/home';
 
-var baseProvider = {provide: APP_BASE_HREF, useValue: ''};
+var baseProvider = {provide: APP_BASE_HREF, useValue: '/'};
 var serviceProviders = [AppService, RouterService, ProjectService];
 
 @NgModule({

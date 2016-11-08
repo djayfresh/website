@@ -10,13 +10,13 @@
      <!-- Polyfill(s) for older browsers -->
     @Scripts.Render("~/bundles/node")
     @Scripts.Render("~/bundles/systemjs")
-    <script>
-        System.import('app/config/main').catch(function (err) { console.error(err); });
-    </script>
+    
 </head>
 <body>
     @RenderBody()
-
+    <script>
+        System.import('app/config/main').catch(function (err) { console.error(err); });
+    </script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/analytics")

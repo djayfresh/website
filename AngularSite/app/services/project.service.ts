@@ -16,6 +16,24 @@ export class ProjectService {
         return this.projects;
     }
 
+    getProjectById(id: string){
+        console.log("Project", this.projects, id);
+        var projectSearch = this.projects.filter((project) => project.id == id);
+        if(projectSearch.length <= 0){
+            return null;
+        }
+        console.log("search", projectSearch);
+        return projectSearch[0];
+    }
+
+    getProjectByCode(shortCode: string){
+        var projectSearch = this.projects.filter((project) => project.shortCode == shortCode);
+        if(projectSearch.length <= 0){
+            return null;
+        }
+        return projectSearch[0];
+    }
+
     //Keep project list client side
     //No API controllers at this time
     private buildProjectList() {

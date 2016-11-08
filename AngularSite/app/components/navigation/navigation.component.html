@@ -12,11 +12,11 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-nav-collapse">
             <ul class="nav navbar-nav" id="LinksPages_Header">
-                <li><a href="/">Home</a></li> <!-- Home -->
+                <li><a href="javascript:void(0)" navigate="">Home</a></li> <!-- Home -->
                 <li class="dropdown"><a id="menu_dropdown_projects" href="#" data-toggle="dropdown">Projects <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a id="menu_projects_all" href="javascript:void(0)" [navigate]="allProjectsLink">All Projects</a></li>
-                        <li><a id="menu_projects_engine" *ngFor="let project of projects" [navigate]="getProjectLink(project)">{{project.name}}</a></li>
+                        <li><a id="menu_projects_engine" href="javascript:void(0)" *ngFor="let project of projects" [navigate]="getProjectLink(project)">{{project.name}}</a></li>
                     </ul>
                 </li>
                 <li><!--<a id="menu_resume" href="@Url.Action("Resume", "Home")">Resume</a>--></li>

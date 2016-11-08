@@ -1,1 +1,10 @@
 ﻿<h3>I'm a list of projects</h3>
+
+<ul class="unstyled">
+    <li *ngFor="let project of projects">
+        <a [navigate]="getProjectLink(project)"><h3>{{project.name}}</h3></a>
+
+        <p>{{project.shortDescription}}</p>
+        <hr />
+    </li>
+</ul>

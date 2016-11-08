@@ -16,15 +16,12 @@ export class RouterService {
 
     private init() {
         this.router.events.subscribe((e) => {
-            console.log("event", e);
             if(e instanceof NavigationStart) {
                 //this.router.getTree();
             }
 
-            console.log("State", this.router.routerState);
             
             this.router.routerState.root.params.subscribe((params: RouteParams) => {
-                console.log("Params", params);
                 if(this.subscribersToParams) {
                     this.subscribersToParams.forEach((subsriber) => {
                         if(subsriber && subsriber.callback){
@@ -54,9 +51,7 @@ export class RouterService {
     }
 
     navigate(url: string, params: RouteParams = null) {
-        console.log("Start nav", url, params);
         url = Utility.buildUrl(url, params);
-        console.log("Send route", url);
         this.router.navigateByUrl(url);
     }
 }

@@ -114,3 +114,7 @@ a:link {
 #Technologies {
     margin: 1%;
 }
+
+ul .unstyled {
+    list-style: none;
+}

@@ -12,4 +12,12 @@ export class Utility {
         };
         return url;
     }
+
+    static isString(obj: any) {
+        return typeof(obj) == 'string';
+    }
+
+    static isArray(obj: any) {
+        return typeof(obj) == 'array';
+    }
 } 
