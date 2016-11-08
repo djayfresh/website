@@ -16,14 +16,7 @@
                 <li class="dropdown"><a id="menu_dropdown_projects" href="#" data-toggle="dropdown">Projects <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a id="menu_projects_all" href="javascript:void(0)" [navigate]="allProjectsLink">All Projects</a></li>
-                        <li><a id="menu_projects_engine" *ngFor="let project of projects" [navigate]="getProjectLink(project)">Game Engine</a></li>
-                        <!--<li><a id="menu_projects_TC5" href="@Url.Action("TC5", "Project")">TC5</a></li>
-                        <li><a id="menu_projects_EscherPlex" href="@Url.Action("EscherPlex", "Project")">Escher Plex</a></li>
-                        <li><a id="menu_projects_Zombie" href="@Url.Action("Zombie", "Project")">Zombie Tower Offense</a></li>
-                        <li><a id="menu_projects_Lycan" href="@Url.Action("Lycan", "Project")">Lycan</a></li>
-                        <li><a id="menu_projects_CityDefense" href="@Url.Action("Projects", "Home")#CityDefense_Ref">City Defense</a></li>
-                        <li><a id="menu_projects_CCA" href="@Url.Action("CookieMod", "Project")">Cookie Mod</a></li>-->
-
+                        <li><a id="menu_projects_engine" *ngFor="let project of projects" [navigate]="getProjectLink(project)">{{project.name}}</a></li>
                     </ul>
                 </li>
                 <li><!--<a id="menu_resume" href="@Url.Action("Resume", "Home")">Resume</a>--></li>

@@ -6,13 +6,13 @@ import { RouterModule }    from '@angular/router';
 
 import { SharedModule } from 'djayfresh/modules/shared';
 import { AppRouting } from 'djayfresh/routes';
-import { AppService, RouterService } from 'djayfresh/services';
+import { AppService, RouterService, ProjectService } from 'djayfresh/services';
 
 import { AppComponent, HomeComponent, NavigationComponent } from 'djayfresh/component/home';
 import { ProjectsComponent, ProjectComponent } from 'djayfresh/component/home';
 
 var baseProvider = {provide: APP_BASE_HREF, useValue: ''};
-var serviceProviders = [AppService, RouterService];
+var serviceProviders = [AppService, RouterService, ProjectService];
 
 @NgModule({
     imports: [BrowserModule, RouterModule, SharedModule, AppRouting, FormsModule],

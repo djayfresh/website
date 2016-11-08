@@ -2,7 +2,7 @@
 import { PathUtility } from 'djayfresh/utility';
 
 import { BaseComponent } from 'djayfresh/component/shared';
-import { AppService } from 'djayfresh/services';
+import { AppService, ProjectService } from 'djayfresh/services';
 import { ExternalRoutingPath, AppRoutingPath } from 'djayfresh/paths';
 import { Project, RouteLink } from 'djayfresh/models';
 
@@ -18,8 +18,10 @@ export class NavigationComponent extends BaseComponent {
     allProjectsLink: string = '/projects';
     projects: Project[];
      
-    constructor(appService: AppService){
+    constructor(appService: AppService, private projectService: ProjectService){
         super(appService);
+
+        this.projects = this.projectService.getProjects();
     }
 
     linkClick(url) {

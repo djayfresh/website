@@ -30,7 +30,7 @@ export class NavigationDirective implements AfterViewInit {
 
         if(this.link instanceof RouteLink){
             this.params = this.link.params;
-            url = this.link.url;
+            url = Utility.buildUrl(this.link.url, this.params);
         }else {
             url = <string>this.link
         }
