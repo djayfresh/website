@@ -2,6 +2,7 @@
 import { Router as AngularRouter, ActivatedRoute, RouterState } from '@angular/router';
 
 import { NavigationStart } from '@angular/router';
+import { Utility } from 'djayfresh/utility';
 
 @Injectable()
 export class RouterService {
@@ -53,15 +54,7 @@ export class RouterService {
 
     navigate(url: string, params: {[key: string]: string} = null) {
         console.log("Start nav", url, params);
-        if(params) {
-            for(var paramKey in params) {
-                var paramId = `:${paramKey}`;
-                var urlParamIndex = url.indexOf(paramId);
-                if(urlParamIndex >= 0){
-                    url = url.replace(new RegExp(paramId, 'g'), params[paramKey]);
-                }
-            };
-        }
+        url = Utility.buildUrl(url, params);
         console.log("Send route", url);
         this.router.navigateByUrl(url);
     }

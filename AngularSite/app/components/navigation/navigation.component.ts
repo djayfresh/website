@@ -13,6 +13,8 @@ import { ExternalRoutingPath } from 'djayfresh/paths';
 export class NavigationComponent extends BaseComponent { 
     
     Links = ExternalRoutingPath;
+
+    allProjectsLink: string = '/projects';
      
     constructor(appService: AppService){
         super(appService);
@@ -20,5 +22,9 @@ export class NavigationComponent extends BaseComponent {
 
     linkClick(url) {
         this.appService.navigate(url);
+    }
+
+    httpsLink(link: string) {
+        return  `https://${link}`;
     }
 }
