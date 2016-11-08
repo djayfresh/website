@@ -2,20 +2,20 @@
 
 import { AppService } from 'djayfresh/services';
 import { Utility } from 'djayfresh/utility';
+import { RouteLink, RouteParams } from 'djayfresh/models';
 
 @Directive({ 
     selector: '[navigate]'
 })
 export class NavigationDirective implements AfterViewInit {
-    @Input('navigate') url: string;
-    @Input('params') set setParams(params: {[key: string]: string}){
+    @Input('navigate') link: string | RouteLink;
+    @Input('params') set setParams(params: RouteParams){
         this.params = params || null;
     }
 
-    params: {[key: string]: string};
+    params: RouteParams;
 
     constructor(private appService: AppService, private el: ElementRef, ) {
-        console.log("Navigator", el);
     }
 
     ngAfterViewInit() {
@@ -25,7 +25,16 @@ export class NavigationDirective implements AfterViewInit {
     }
 
     @HostListener('click', ['$event.target']) onMouseClick(target) {
-        console.log("Mouse Click", this.url, this.params);
-        this.appService.navigate(this.url, this.params);
+        var url = '';
+        console.log("Mouse Click", this.link, this.params);
+
+        if(this.link instanceof RouteLink){
+            this.params = this.link.params;
+            url = this.link.url;
+        }else {
+            url = <string>this.link
+        }
+
+        this.appService.navigate(url, this.params);
     }
 }

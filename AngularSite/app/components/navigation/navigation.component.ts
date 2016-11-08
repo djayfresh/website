@@ -3,7 +3,8 @@ import { PathUtility } from 'djayfresh/utility';
 
 import { BaseComponent } from 'djayfresh/component/shared';
 import { AppService } from 'djayfresh/services';
-import { ExternalRoutingPath } from 'djayfresh/paths';
+import { ExternalRoutingPath, AppRoutingPath } from 'djayfresh/paths';
+import { Project, RouteLink } from 'djayfresh/models';
 
 @Component({
     selector: 'navigation',
@@ -15,6 +16,7 @@ export class NavigationComponent extends BaseComponent {
     Links = ExternalRoutingPath;
 
     allProjectsLink: string = '/projects';
+    projects: Project[];
      
     constructor(appService: AppService){
         super(appService);
@@ -26,5 +28,9 @@ export class NavigationComponent extends BaseComponent {
 
     httpsLink(link: string) {
         return  `https://${link}`;
+    }
+
+    getProjectLink(project: Project): RouteLink {
+        return { url: AppRoutingPath.Project, params: { id: project.id }};
     }
 }

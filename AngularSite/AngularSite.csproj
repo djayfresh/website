@@ -210,6 +210,7 @@
     <TypeScriptCompile Include="app\node_modules\djayfresh\paths.ts" />
     <TypeScriptCompile Include="app\directives\navigate.directive.ts" />
     <TypeScriptCompile Include="app\node_modules\djayfresh\directives.ts" />
+    <TypeScriptCompile Include="app\models\shared.model.ts" />
     <Content Include="config\webpack.dev.js" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
