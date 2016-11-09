@@ -4,7 +4,7 @@ import { BaseComponent } from 'djayfresh/component/shared';
 import { PathUtility } from 'djayfresh/utility';
 import { AppService, ProjectService } from 'djayfresh/services';
 
-import { Project } from 'djayfresh/models';
+import { Project, ImageLink, VideoLink, ProjectLink } from 'djayfresh/models';
 
 @Component({
     selector: 'project',
@@ -36,5 +36,14 @@ export class ProjectComponent extends BaseComponent implements OnInit{
         if(this.id){
             this.project = this.projectService.getProjectById(this.id);
         }
+    }
+    getImageLinks(links: ProjectLink[]) {
+        return links.filter((detail) => detail instanceof ImageLink)
+                .map((detail) => <ImageLink>detail);
+    }
+
+    getVideoLinks(links: ProjectLink[]) {
+        return links.filter((detail) => detail instanceof VideoLink)
+                .map((detail) => <VideoLink>detail);
     }
 }

@@ -1,5 +1,10 @@
 ﻿<div *ngIf="project">
     <h3>{{project.name}}</h3>
-
-
+    <div class="content">
+        <div class="detail" *ngFor="let detial of project.details">
+            <p *ngFor="let description of detail.descriptions">{{description}}</p>
+            <img [src]="imgLink.uri" [alt]="imgLink.alternateText" *ngFor="let imgLink of getImageLinks(detail.links)" />
+            <video [src]="videoLink.uri" *ngFor="let videoLink of getVideoLinks(detail.links)"></video>
+        </div>
+    </div>
 </div>

@@ -17,12 +17,10 @@ export class ProjectService {
     }
 
     getProjectById(id: string){
-        console.log("Project", this.projects, id);
         var projectSearch = this.projects.filter((project) => project.id == id);
         if(projectSearch.length <= 0){
             return null;
         }
-        console.log("search", projectSearch);
         return projectSearch[0];
     }
 
@@ -52,8 +50,7 @@ export class ProjectService {
             name: 'Escher Plex',
             shortCode: 'epx',
             shortDescription: 'Take a journey through the world of M.C. Escher in this puzzle style mind game',
-            details: [],
-            descriptions: []
+            details: []
         };
 
         this.projects.push(escherPlex);
@@ -65,8 +62,7 @@ export class ProjectService {
             name: 'Game Engine',
             shortCode: 'tfe',
             shortDescription: 'The Fresh Game Engine, my own OpenGL rendering engine',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(gameEngine);
@@ -78,8 +74,7 @@ export class ProjectService {
             name: 'T.C.5',
             shortCode: 'tc5',
             shortDescription: 'This intractive arcade classic now in the home using Microsoft Kinect',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(tc5);
@@ -91,8 +86,7 @@ export class ProjectService {
             name: 'Zombie Tower Offense',
             shortCode: 'zto',
             shortDescription: 'A spin on the classic Tower Defense gametype',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(towerOffense);
@@ -104,8 +98,7 @@ export class ProjectService {
             name: 'Lycan',
             shortCode: 'lyn',
             shortDescription: 'Wearwolf or Villager, this multiplayer game will have all your friends jumping in their seats',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(lycan);
@@ -117,8 +110,7 @@ export class ProjectService {
             name: 'City Defense',
             shortCode: 'cdf',
             shortDescription: 'Defend the city from destruction in this 3rd person flying game.',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(cityDefense);
@@ -130,8 +122,7 @@ export class ProjectService {
             name: 'Fresh Cookies',
             shortCode: 'fcm',
             shortDescription: 'Why not have more cookies while playing your favorite game, Minecraft',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(freshCookies);
@@ -144,8 +135,7 @@ export class ProjectService {
             name: 'Angular 2 Website',
             shortCode: 'a2w',
             shortDescription: 'This website upgraded to Angular 2',
-            details: [],
-            descriptions: []
+            details: []
         }
 
         this.projects.push(towerOffense);

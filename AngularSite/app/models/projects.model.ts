@@ -6,11 +6,11 @@ export interface Project {
     shortDescription: string;
     details: ProjectDetails[];
 
-    descriptions: string[];
 }
 
 export interface ProjectDetails {
     links: ProjectLink[];
+    descriptions: string[];
 }
 
 export class ProjectLink {
